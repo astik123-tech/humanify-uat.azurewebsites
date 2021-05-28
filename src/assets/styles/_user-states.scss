@@ -1,0 +1,59 @@
+/*STATUS COLORS*/
+
+.status-available {
+  color: $color-available;
+  &.user-avatar {
+    .avatar {
+      border-color: $color-available;
+      background-color: $color-available;
+    }
+  }
+}
+.status-busy,
+.status-busyoncall {
+  color: $color-busy;
+  &.user-avatar {
+    .avatar {
+      border-color: $color-busy;
+      background-color: $color-busy;
+    }
+  }
+}
+.status-onbreak {
+  color: $color-onbreak;
+  &.user-avatar {
+    .avatar {
+      border-color: $color-onbreak;
+      background-color: $color-onbreak;
+    }
+  }
+}
+.status-offline {
+  color: $color-offline;
+  &.user-avatar {
+    .avatar {
+      border-color: $color-offline;
+      background-color: $color-offline;
+    }
+  }
+}
+
+.color-available {
+  color: $color-available;
+}
+.color-busy {
+  color: $color-busy;
+}
+.color-offline {
+  color: $color-offline;
+}
+.color-on-break {
+  color: $color-onbreak;
+}
+
+/*end STATUS COLORS */
+
+/* MOODS */
+/*Mood1 = "Feeling Great"
+Mood2 = "Hard at Work"
+Mood3 = "Tough Day"*/

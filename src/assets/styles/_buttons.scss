@@ -1,0 +1,304 @@
+.bttn {
+  position: relative;
+  @extend %animation-03s;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  min-height: 34px;
+  width: auto;
+  border-radius: 17px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 14px;
+  font-family: $font-family-medium;
+  font-size: $txt-sm;
+  line-height: 1em;
+  text-decoration: uppercase;
+  border-color: $color-9;
+  background-color: $color-9;
+  color: $color-15;
+  cursor: pointer;
+  .ico,
+  .icon {
+    padding-right: 10px;
+  }
+  &:hover {
+    border-color: $color-9;
+    color: $color-9;
+    background-color: transparent;
+  }
+  &-sm {
+    min-height: 28px;
+    border-radius: 14px;
+    border-color: $color-6;
+    background-color: $color-6;
+    color: $color-15;
+    &:hover {
+      border-color: $color-6;
+      color: $color-6;
+      background-color: transparent;
+    }
+  }
+  &-lg {
+    min-height: 48px;
+    border-radius: 24px;
+    font-size: $txt-size;
+  }
+  &-cancel {
+    min-width: 110px;
+    border-color: $color-12;
+    color: $color-12;
+    background-color: $color-15;
+  }
+
+  &.disabled,
+  &[disabled],
+  &:disabled {
+    background-color: transparent;
+    box-shadow: none;
+    color: $color-14;
+    border-color: $color-14;
+    cursor: default;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      color: $color-14;
+      border-color: $color-14;
+    }
+  }
+
+  &-arrow {
+    min-width: 150px;
+    padding-left: 35px;
+    padding-right: 35px;
+    .icon {
+      position: relative;
+      &:after,
+      &:before {
+        @extend %animation-03s;
+        position: absolute;
+        display: block;
+        margin-left: 10px;
+        top: 45%;
+        right: 0;
+        transform: translate(25px, -50%);
+        content: "\e900";
+        font-family: "icomoon" !important;
+        font-size: 1.2em;
+        line-height: 1px;
+      }
+    }
+    &:hover:not(:disabled) .icon {
+      &:after {
+        // right: -3px;
+        color: $color-9;
+        border-color: $color-9;
+      }
+      &:before {
+        // right: 3px;
+        color: $color-9;
+        border-color: $color-9;
+      }
+    }
+  }
+}
+
+/* buttons icons */
+.bttn-icon {
+  position: relative;
+  @extend %animation-03s;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $color-9;
+  color: $color-9;
+  font-size: $txt-size;
+  cursor: pointer;
+  .icon {
+    display: block;
+    cursor: pointer;
+  }
+  .icon-hover {
+    @extend %animation-03s;
+    position: absolute;
+    display: block;
+    opacity: 0;
+  }
+  &:hover {
+    border-color: $color-9;
+    .icon-hover {
+      @extend %animation-03s;
+      opacity: 1;
+      + .icon {
+        @extend %animation-03s;
+        opacity: 0;
+      }
+    }
+  }
+
+  &-solid {
+    background-color: $color-9;
+    color: $color-15;
+    // &:hover {
+    //   background-color: $color-9;
+    //   color: $color-15;
+    // }
+  }
+  &-sm {
+    height: 26px;
+    width: 26px;
+    border-radius: 9px;
+  }
+
+  &-clear {
+    border-color: transparent;
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+  &-no-border {
+    border-color: transparent;
+    &:hover {
+      border-color: $color-9;
+      background-color: rgba($color-9, 0.15);
+    }
+  }
+
+  &-2 {
+    //blue button
+    border-color: $color-6;
+    color: $color-6;
+    &:hover {
+      border-color: $color-6;
+      background-color: $color-6;
+      color: $color-15;
+    }
+  }
+  &-solid-2 {
+    border-color: $color-6;
+    background-color: $color-6;
+    color: $color-15;
+    &:hover {
+      border-color: $color-6;
+      background-color: $color-15;
+      color: $color-6;
+    }
+  }
+
+  &-close {
+    color: rgba($color-3, 0.6);
+    border-color: transparent;
+    &:hover {
+      border-color: $color-3;
+      color: rgba($color-3, 1);
+      background-color: rgba($color-3, 0.15);
+    }
+  }
+
+  &.disabled,
+  &[disabled],
+  &:disabled {
+    background-color: transparent;
+    box-shadow: none;
+    color: $color-14;
+    border-color: $color-14;
+    cursor: default;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      color: $color-14;
+      border-color: $color-14;
+    }
+  }
+}
+
+.bttn-send-icon {
+  width: 30px;
+  height: 30px;
+  color: $color-9;
+  border: 0;
+  background-color: transparent;
+  font-size: 1.2em;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+/* NAVIGATIONS, LINKS */
+.bttn-nav {
+  position: relative;
+  @extend %animation-03s;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family;
+  font-size: $txt-sm;
+  color: $color-1;
+  line-height: 1em;
+  white-space: nowrap;
+  min-height: 34px;
+  border-radius: 17px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0 14px;
+  cursor: pointer;
+  text-decoration: none;
+  .ico {
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 1.8em;
+  }
+  &:hover {
+    background-color: rgba($color-9, 0.1);
+    border-color: $color-9;
+    color: $color-9;
+  }
+  &-lg {
+    font-size: $txt-lg;
+    min-height: 54px;
+    border-radius: 27px;
+    .ico {
+      padding-right: 20px;
+      font-size: 1.4em;
+      opacity: 0.5;
+    }
+  }
+
+  &.active,
+  &-solid {
+    background-color: rgba($color-9, 1);
+    border-color: $color-9;
+    color: $color-15;
+  }
+}
+
+// &-close {
+//   position: relative;
+//   width: 42px;
+//   height: 42px;
+//   margin-right: 5px;
+//   border: 1px solid #fff;
+//   border-radius: 50%;
+//   color: #fff;
+//   .icon {
+//     content: "\e925";
+//     display: block;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%) rotate(45deg);
+//   }
+// }

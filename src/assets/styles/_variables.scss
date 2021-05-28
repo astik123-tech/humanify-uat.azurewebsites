@@ -1,0 +1,347 @@
+// Fonts
+$font-family: "GuardianSans-Regular", sans-serif;
+$font-family-light: "GuardianSans-Light", sans-serif;
+$font-family-medium: "GuardianSans-Medium", sans-serif;
+$font-family-bold: "GuardianSans-Bold", sans-serif;
+$font-family-semibold: "GuardianSans-Semibold", sans-serif;
+
+//Font-size
+$txt-xxxxxxl: 3.17em; //54px;
+$txt-xxxxxl: 2.94em; //50px;
+$txt-xxxxl: 2.23em; //38px;
+$txt-xxxl: 2em; // 34px;
+$txt-xxl-xxxl: 1.76em; //30px;
+$txt-xxl: 1.53em; //26px;
+$txt-xl-xxl: 1.41em; //24px;
+$txt-xl: 1.21em; // 21px
+$txt-lg-xl: 1.18em; // 20px;
+$txt-lg: 1.06em; //18px;
+$txt-size: 17px;
+$txt-md: 0.94em; //16px;
+$txt-md-sm: 0.88em; //15px;
+$txt-sm: 0.83em; // 14px
+$txt-sm-xs: 0.76em; //13px;
+$txt-xs: 0.71em; // 12px;
+$txt-xxs: 0.65em; // 11px;
+$txt-xxxs: 10px;
+
+// $txt-size-xl: 38px;
+
+//Colors
+$txt-color: #2b3a42;
+$link-color: #5288ef;
+
+$bg-color: #f7f7f7;
+$bg-error: transparent linear-gradient(321deg, rgba(255, 255, 255, 1) 0%, rgba(220, 222, 224, 1) 100%) 0% 0%;
+
+//Brand Colors
+$color-1: #3e5666;
+$color-2: #bdd6df;
+$color-3: #f1f2f3;
+$color-4: #ef5726;
+
+//Expanded Color Palette
+$color-5: #3fd983;
+$color-6: #4187f7;
+$color-7: #ffc206;
+$color-8: #7d48da;
+$color-9: #fa6834;
+$color-10: #00b7b4;
+
+//Neutral colors
+$color-11: #000000;
+$color-12: #435664;
+$color-13: #a4a4a4;
+$color-14: #cbd0d3;
+$color-15: #ffffff;
+
+//GRADIENTS
+$bg-gradient-1: linear-gradient(258deg, rgba(43, 58, 66, 1) 0%, rgba(62, 86, 102, 1) 100%);
+$bg-gradient-2: linear-gradient(258deg, rgba(241, 242, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+$color-available: #3fd983;
+$color-busy: #de6138;
+$color-onbreak: #7550d2;
+$color-offline: #a4a4a4;
+
+$color-success: #3fd983;
+$color-error: #ee5725;
+$color-warning: #ffc206;
+$color-info: #4187f7;
+
+$icon-success: url("../../assets/icons/success.svg");
+$icon-error: url("../../assets/icons/error.svg");
+$icon-warning: url("../../assets/icons/warning.svg");
+$icon-info: url("../../assets/icons/info.svg");
+
+//BOX COLOR
+$border-color-gray: #bec3c5;
+$border-color-gray1: #ccd0d3;
+$box-border-color: #ecebed;
+$box-bg-color: #fcfcfc;
+
+// FORMS
+$form-ctrl-height-lg: 47px;
+$form-ctrl-height: 33px;
+$form-ctrl-height-sm: 27px;
+$form-ctrl-color: #1a051d;
+$form-ctrl-color-disabled: #ccd0d3;
+
+//STATUS
+$status-bg-color: #435664;
+$status-height: 40px;
+$tabs-height: 40px;
+
+// forms
+$form-control-font-size: 14px;
+$form-control-height: 30px;
+$form-control-radius: 5px;
+
+//LAYOUT
+/*
+Typical resolutions for some popular screen sizes:
+19-inch screen (standard ratio): 1280 x 1024 pixels.
+20-inch screen (standard ratio): 1600 x 1200 pixels.
+22-inch screen (widescreen): 1680 x 1050 pixels.
+24-inch screen (widescreen): 1900 x 1200 pixels.
+*/
+$bp-desktop: 1900px;
+$bp-laptop: 1440px;
+$bp-responsive: 1280px;
+$bp-tablet: 1024px;
+$bp-mobile: 768px;
+$bp-mobile-sm: 680px;
+$bp-mobile-xs: 580px;
+
+$space-side: 20px;
+$space-side-sm: 15px;
+$space-side-xs: 10px;
+$border-radius-sm: 3px;
+$border-radius: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-xl: 20px;
+
+$header-height: 49px;
+
+$main-content-space-top: 105px;
+$main-content-space-bottom: 70px;
+$main-content-sidespace: 90px;
+$main-content-sidespace-lg: 8%;
+
+$icon-size-xs: 16px;
+$icon-size-sm: 32px;
+
+//styles
+$box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.3);
+
+// user avatar
+$avatar-size-xxs: 35px;
+$avatar-size-xs: 37px;
+$avatar-size-sm: 58px;
+$avatar-size-md: 85px;
+$avatar-size: 145px;
+
+$avatar-size-bp-responsive: 130px;
+$avatar-size-bp-tablet: 115px;
+
+$avatar-icon-size: 40px;
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+} // .clasname { @include transition(all 0.5s ease-in-out); }
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+} // @include box-shadow($box-shadow);
+
+@mixin text-shadow($property) {
+  -webkit-text-shadow: $property;
+  -moz-text-shadow: $property;
+  -ms-text-shadow: $property;
+  text-shadow: $property;
+} // @include text-shadow($txt-shadow);
+
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+// cross-brawser styles
+
+%flex {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+} //  @extend %flex;
+
+%flex-inline {
+  display: inline-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
+}
+%col {
+  -ms-flex-preferred-size: 0;
+  -ms-flex-positive: 1;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+// $animation: all 0.5s ease-in-out;
+
+%animation {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+} //  @extend %animation;
+%animation-03s {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+} //  @extend %animation-03s;
+%animation-01s {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+} //  @extend %animation-01s;
+
+// @mixin animation($property) {
+//     -webkit-transition: $property;
+//     -moz-transition: $property;
+//     -ms-transition: $property;
+//     -o-transition: $property;
+//     transition: $property;
+// } // @include animation($animation);
+
+// %animation {
+//     -webkit-transition: all 0.5s ease-in-out;
+//     -moz-transition: all 0.5s ease-in-out;
+//     -ms-transition: all 0.5s ease-in-out;
+//     -o-transition: all 0.5s ease-in-out;
+//     transition: all 0.5s ease-in-out;
+// }
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+} // .clasname { @include transition(all 0.5s ease-in-out); }
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+} // @include box-shadow($box-shadow);
+
+@mixin text-shadow($property) {
+  -webkit-text-shadow: $property;
+  -moz-text-shadow: $property;
+  -ms-text-shadow: $property;
+  text-shadow: $property;
+} // @include text-shadow($txt-shadow);
+
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+// cross-brawser styles
+
+%flex {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+} //  @extend %flex;
+
+%flex-inline {
+  display: inline-flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
+}
+%col {
+  -ms-flex-preferred-size: 0;
+  -ms-flex-positive: 1;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+$animation: all 0.5s ease-in-out;
+
+%animation {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+} //  @extend %animation;
+%animation-03s {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+} //  @extend %animation;
+
+// @mixin animation($property) {
+//     -webkit-transition: $property;
+//     -moz-transition: $property;
+//     -ms-transition: $property;
+//     -o-transition: $property;
+//     transition: $property;
+// } // @include animation($animation);
+
+// %animation {
+//     -webkit-transition: all 0.5s ease-in-out;
+//     -moz-transition: all 0.5s ease-in-out;
+//     -ms-transition: all 0.5s ease-in-out;
+//     -o-transition: all 0.5s ease-in-out;
+//     transition: all 0.5s ease-in-out;
+// }
+
+.scroll {
+  margin-right: 5px;
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(#cbd0d3, 0);
+  }
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(#ccc, 1);
+  }
+}
