@@ -16,7 +16,7 @@ const UserInfo = () => {
       <img className="user__logo" src={profilePicture} alt="user" />
       <div className="user__name">{name}</div>
       <IconButton
-        disableRipple="false"
+        disableRipple={false}
         style={{ color: "#000" }}
         component="span"
       >

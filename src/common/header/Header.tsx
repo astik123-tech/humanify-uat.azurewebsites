@@ -9,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 //logo
 import ttechnlogo from "../../assets/images/ttec-hn-logo.svg";
 //component
-import UserInfo from "./UserInfo.js";
+import UserInfo from "./UserInfo";
 //icons
 import { BsBuilding } from 'react-icons/bs'
 import { FaDesktop } from 'react-icons/fa'
@@ -37,7 +37,7 @@ const Header = () => {
     <AppBar position="static" style={{ backgroundColor: "#F7F7F7" }}>
       <Toolbar>
         <Typography>
-          <Link exact to='/'>
+          <Link to='/'>
             <img src={ttechnlogo} alt="TTEC HN" className={classes.logo} />
           </Link>
         </Typography>
