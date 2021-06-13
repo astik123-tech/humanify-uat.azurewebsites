@@ -13,8 +13,8 @@ const UserInfo = () => {
   const [profilePicture, setProfilePicture] = useState(image)
   return (
     <div className="user">
-      <img className="user__logo" src={profilePicture} alt="user" />
-      <div className="user__name">{name}</div>
+      <img className="user__logo" id="logo" src={profilePicture} alt="user" />
+      <div className="user__name" id="name">{name}</div>
       <IconButton
         disableRipple={false}
         style={{ color: "#000" }}

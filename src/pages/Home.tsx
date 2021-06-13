@@ -1,19 +1,15 @@
-import {makeStyles} from '@material-ui/core'
-const useStyles = makeStyles((theme)=> ({
-  heading:{
-    textAlign:'center',
-    color:'#fff',
-    fontFamily:'time roman'
+import React from "react";
+import { makeStyles } from "@material-ui/core";
+const useStyles = makeStyles((theme) => ({
+  heading: {
+    textAlign: "center",
+    color: "#fff",
+    fontFamily: "time roman",
   },
 }));
 const Home = () => {
   const classes = useStyles();
-    return (
-      <div>
-        <h2 className={classes.heading}>Welcome, Tommy steele </h2>
-      </div>
-    );
-  };
-  
-  export default Home;
-  
+  return (<h2 className={classes.heading}>Welcome</h2>);
+};
+
+export default Home;

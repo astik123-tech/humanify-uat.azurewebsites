@@ -16,7 +16,6 @@ import { FaDesktop } from 'react-icons/fa'
 import { BiBody } from 'react-icons/bi'
 //style
 import "./Header.scss";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -42,9 +41,9 @@ const Header = () => {
           </Link>
         </Typography>
         <Typography className={classes.buttons}>
-          <NavLink className="headerLink" to="neighborhood"><BsBuilding/> My Neighborhood</NavLink>
-          <NavLink className="headerLink" to="production-floor"><BiBody />  Production Floor</NavLink>
-          <NavLink className="headerLink" to="my-desk"><FaDesktop /> My Desk</NavLink>
+          <NavLink className="headerLink" data-testid="neighborhood" to="neighborhood"><BsBuilding/> My Neighborhood</NavLink>
+          <NavLink className="headerLink" data-testid="production-floor" to="production-floor"><BiBody />  Production Floor</NavLink>
+          <NavLink className="headerLink" data-testid="my-desk" to="my-desk"><FaDesktop /> My Desk</NavLink>
         </Typography>
         <UserInfo />
       </Toolbar>
