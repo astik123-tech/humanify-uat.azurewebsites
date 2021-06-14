@@ -3,7 +3,6 @@ const ProductionFloor = () => {
   return (
     <div>
       <h2>Production FLoor</h2>
-      
     </div>
   );
 };

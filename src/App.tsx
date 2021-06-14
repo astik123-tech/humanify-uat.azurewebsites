@@ -15,10 +15,9 @@ const App=() =>{
      <Header />
         <Switch>
             <Route path="/" exact={true} component={Home}/>
-            <Route path="/my-desk" component={MyDesk}/>
+            <Route path='/my-desk' component={MyDesk}/>
             <Route path="/neighborhood" component={Neighborhood}/>
             <Route path="/production-floor" component={ProductionFloor}/>
-            
         </Switch>
      </BrowserRouter>
      </>
