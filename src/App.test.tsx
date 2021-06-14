@@ -45,7 +45,7 @@ describe("Tests for App Router", () => {
   test('should render ProductionFloor',() => {
     Header.mockImplementation(() => <div>PageHeaderMock</div>)
     ProductionFloor.mockImplementation(() => <div>ProductionFloorMock</div>)
-    render(<MemoryRouter InitialEntries={["/ProductionFloor"]}>
+    render(<MemoryRouter InitialEntries={["/production-floor"]}>
         <Header/>
         <ProductionFloor/>
       </MemoryRouter>
@@ -56,7 +56,7 @@ describe("Tests for App Router", () => {
   test('should render MyDesk',() => {
     Header.mockImplementation(() => <div>PageHeaderMock</div>)
     MyDesk.mockImplementation(() => <div>MyDeskMock</div>)
-    render(<MemoryRouter InitialEntries={["/MyDesk"]}>
+    render(<MemoryRouter InitialEntries={["/my-desk"]}>
         <Header/>
         <MyDesk/>
       </MemoryRouter>
