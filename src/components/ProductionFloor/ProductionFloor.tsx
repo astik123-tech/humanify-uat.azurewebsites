@@ -1,10 +1,6 @@
 import React from 'react'
 const ProductionFloor = () => {
-  return (
-    <div>
-      <h2>Production FLoor</h2>
-    </div>
-  );
+  return (<h2>Production FLoor</h2>);
 };
 
 export default ProductionFloor;

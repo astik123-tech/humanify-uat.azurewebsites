@@ -1,10 +1,6 @@
 import React from 'react'
 const MyDesk = () => {
-  return (
-    <div>
-      <h2>My Desk</h2>
-    </div>
-  );
+  return (<h2>My Desk</h2>);
 };
 
 export default MyDesk;

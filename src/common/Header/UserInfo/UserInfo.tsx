@@ -4,8 +4,8 @@ import IconButton from "@material-ui/core/IconButton";
 //material icon
 import { BiDotsVerticalRounded } from "react-icons/bi";
 //img
-import image from "../../assets/images/avatar2.png";
-//style scss
+import image from "../../../assets/images/avatar2.png";
+//style 
 import "./UserInfo.scss";
 
 const UserInfo = () => {

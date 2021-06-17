@@ -1,27 +1,17 @@
-import React from 'react';
-import './App.css';
-import Header from './common/header/Header'
+import React from "react";
+import "./App.scss";
+import Header from "./common/Header/Header/Header";
 //routing
-import {BrowserRouter, Switch, Route } from 'react-router-dom'
-//Pages component
-import Home from './pages/Home'
-import MyDesk from './pages/MyDesk'
-import Neighborhood from './pages/Neighborhood'
-import ProductionFloor from './pages/ProductionFloor'
-const App=() =>{
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./Routes";
+
+const App = () => {
   return (
-     <>
-     <BrowserRouter>
-     <Header />
-        <Switch>
-            <Route path='/my-desk' component={MyDesk}/>
-            <Route path="/neighborhood" component={Neighborhood}/>
-            <Route path="/production-floor" component={ProductionFloor}/>
-            <Route path="/" exact={true} component={Home}/>
-        </Switch>
-     </BrowserRouter>
-     </>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
