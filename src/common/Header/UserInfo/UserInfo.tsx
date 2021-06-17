@@ -1,20 +1,23 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 //material component
 import IconButton from "@material-ui/core/IconButton";
 //material icon
 import { BiDotsVerticalRounded } from "react-icons/bi";
 //img
 import image from "../../../assets/images/avatar2.png";
-//style 
-import "./UserInfo.scss";
-
+//style
+import {
+  UserDiv,
+  UserName,
+  UserPicture,
+} from "../../../styledComponents/UserInfo";
 const UserInfo = () => {
-  const [name, setName] = useState('Tommy steele')
-  const [profilePicture, setProfilePicture] = useState(image)
+  const [name, setName] = useState("Tommy steele");
+  const [profilePicture, setProfilePicture] = useState(image);
   return (
-    <div className="user">
-      <img className="user__logo" id="logo" src={profilePicture} alt="user" />
-      <div className="user__name" id="name">{name}</div>
+    <UserDiv>
+      <UserPicture id="logo" src={profilePicture} />
+      <UserName id="name">{name}</UserName>
       <IconButton
         disableRipple={false}
         style={{ color: "#000" }}
@@ -22,7 +25,7 @@ const UserInfo = () => {
       >
         <BiDotsVerticalRounded />
       </IconButton>
-    </div>
+    </UserDiv>
   );
 };
 
