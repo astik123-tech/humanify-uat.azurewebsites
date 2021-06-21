@@ -10,17 +10,16 @@ import ttechnlogo from "../../../assets/images/ttec-hn-logo.svg";
 //component
 import UserInfo from "../UserInfo/UserInfo";
 //icons
-import { BsBuilding } from "react-icons/bs";
-import { FaDesktop } from "react-icons/fa";
-import { BiBody } from "react-icons/bi";
+import MyDesk from "../../../assets/icons/MyDesk.svg";
+import ProductionFloor from "../../../assets/icons/ProductionFloor.svg";
+import MyNeighbourhood from "../../../assets/icons/MyNeighbourhood.png";
 //style
-import './Header.scss'
+import "./Header.scss";
 import {
   Logo,
   StyledNavLink,
   CustomDiv,
 } from "../../../styledComponents/Header";
-import { Icon } from "../../../styledComponents/sharedStyle"
 const Header = () => {
   return (
     <AppBar position="static" style={{ backgroundColor: "#F7F7F7" }}>
@@ -30,24 +29,18 @@ const Header = () => {
             <Logo src={ttechnlogo} alt="TTEC HN" className="logo" />
           </Link>
         </Typography>
-        <CustomDiv
-          marginR="30px"
-          fontSize="18px"
-          fontWeight="400"
-          flexGrow="1"
-          >
-          
-          <StyledNavLink data-testid="neighborhood" to="neighborhood"> 
-           <img src="../../../assets/icons/MyNeighbourhood.png"/> 
-           My Neighborhood
+        <CustomDiv marginR="30px" fontSize="18px" fontWeight="400" flexGrow="1">
+          <StyledNavLink data-testid="neighborhood" to="neighborhood">
+            <img src={MyNeighbourhood} style={{marginRight:"5px"}}/>
+            My Neighborhood
           </StyledNavLink>
           <StyledNavLink data-testid="production-floor" to="production-floor">
-          <img src="../../../assets/icons/ProductionFloor.svg"/>
-           Production Floor
+            <img src={ProductionFloor} style={{marginRight:"5px"}} />
+            Production Floor
           </StyledNavLink>
           <StyledNavLink data-testid="my-desk" to="my-desk">
-          <img src="../../../assets/icons/MyDesk.svg"/> 
-           My Desk
+            <img src={MyDesk} style={{marginRight:"5px"}}/>
+            My Desk
           </StyledNavLink>
         </CustomDiv>
         <UserInfo />

@@ -42,11 +42,12 @@ export const StyledNavLink = styled(NavLink)`
   color: black;
   margin: 1rem;
   padding: 0.7rem;
+  margin-left: 1.0rem;
   word-spacing: 0.2rem;
   &:hover {
     border-radius: 2rem;
     box-shadow: 0px 0px 1px 1px orangered;
-    color: orangered;
-    background-color: rgba(orangered, 0.1);
+    color: orangered !important;
+    background-color: rgba(orangered,.5);
   }`;
 
