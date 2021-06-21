@@ -18,8 +18,9 @@ import './Header.scss'
 import {
   Logo,
   StyledNavLink,
-  TypograhyDiv,
+  CustomDiv,
 } from "../../../styledComponents/Header";
+import { Icon } from "../../../styledComponents/sharedStyle"
 const Header = () => {
   return (
     <AppBar position="static" style={{ backgroundColor: "#F7F7F7" }}>
@@ -29,17 +30,26 @@ const Header = () => {
             <Logo src={ttechnlogo} alt="TTEC HN" className="logo" />
           </Link>
         </Typography>
-        <TypograhyDiv>
-          <StyledNavLink data-testid="neighborhood" to="neighborhood">
-            <BsBuilding /> My Neighborhood
+        <CustomDiv
+          marginR="30px"
+          fontSize="18px"
+          fontWeight="400"
+          flexGrow="1"
+          >
+          
+          <StyledNavLink data-testid="neighborhood" to="neighborhood"> 
+           <img src="../../../assets/icons/MyNeighbourhood.png"/> 
+           My Neighborhood
           </StyledNavLink>
           <StyledNavLink data-testid="production-floor" to="production-floor">
-            <BiBody /> Production Floor
+          <img src="../../../assets/icons/ProductionFloor.svg"/>
+           Production Floor
           </StyledNavLink>
           <StyledNavLink data-testid="my-desk" to="my-desk">
-            <FaDesktop /> My Desk
+          <img src="../../../assets/icons/MyDesk.svg"/> 
+           My Desk
           </StyledNavLink>
-        </TypograhyDiv>
+        </CustomDiv>
         <UserInfo />
       </Toolbar>
     </AppBar>
