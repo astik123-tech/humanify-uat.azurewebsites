@@ -9,11 +9,11 @@
 body{
   position: relative;
   min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
+  
 }
 
 .sidebar{
+  border-top: 1px solid #0000000A;
   position: fixed;
   top: 64px;
   left:0;
@@ -24,8 +24,8 @@ body{
   z-index: 99;
   transition: all 0.5s ease;
 }
-.sidebar.active{
-  width: 240px
+.sidebar.Active{
+  width: 270px
 }
 .sidebar .logo_content .logo{
   color: #3E3F42;
@@ -37,7 +37,7 @@ body{
   pointer-events: none;
   transition: all 0.5s ease;
 }
-.sidebar.active .logo_content .logo{
+.sidebar.Active .logo_content .logo{
   opacity: 1;
   pointer-events: none;
 }
@@ -46,12 +46,15 @@ body{
   margin-right: 5px;
 }
 .logo_content .logo .logo_name{
-  font-size: 20px;
-  font-weight: 400;
+   color: #9EA0A5;
+   font-size: 15px;
+   font-weight: 400;
+   text-align: center;
+   pointer-events: none;
+   transition: all 0.3s ease;
 }
-
-.sidebar ul{
-  margin-top: 20px;
+.icon_close{
+  color: #EAEDF3;
 }
 .sidebar ul li{
   position: relative;
@@ -72,6 +75,8 @@ body{
   border-radius: 12px;
   line-height: 50px;
   text-align: center;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 .sidebar .links_name{
   font-size: 15px;
@@ -80,16 +85,21 @@ body{
   pointer-events: none;
   transition: all 0.3s ease;
 }
-.sidebar.active .links_name{
+.sidebar.Active .links_name{
   transition: 0s;
   opacity: 1;
   pointer-events: auto
 }
-.sidebar.active ~ .home_content{
+.sidebar.Active ~ .home_content{
   z-index: 100;
 }
-.sidebar.active ~ .home_content{
+.sidebar.Active ~ .home_content{
   width: calc(100% - 240px);
   left: 240px;
+}
 
+.active{
+  color: #CD3E0A !important;
+  background-color: #F8F8F8;
+  border-right: 2px solid #CD3E0A;
 }

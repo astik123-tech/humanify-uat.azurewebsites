@@ -10,14 +10,14 @@ const App = () => {
   return (
     <BrowserRouter>
       <AdminHeader/>
-      <div>
-         <div>
+      <main>
+         <div className="left__side">
           <SideBar/>
          </div>
-         <div>
+         <div className="right__side">
             <Routes/>
          </div>
-      </div>
+      </main>
     </BrowserRouter>
   );
 };

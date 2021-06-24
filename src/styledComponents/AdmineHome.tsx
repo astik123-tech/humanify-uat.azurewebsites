@@ -29,18 +29,3 @@ export const Container = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
 `
-// p{
-//     margin: 0%;
-//   }
-//   h5 {
-//     margin: 0%;
-//   }
-  
-//   .content p {
-//     color:#9EA0A5;
-//   }
-//   .heading{
-//     font-size: 18px;
-//     font-weight: 600;
-//     height: 50px;
-//   }

@@ -1,7 +1,20 @@
 body{
-  // background-image: url('./assets/images/bg-home.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // font-family: 'Times New Roman', Times, serif;
      background-color:#EDEFF1
+}
+main{
+  position: relative;
+  width: 100%;
+}
+.left__side{
+  position: absolute;
+  max-width:240px ;
+}
+
+.right__side{
+  position: absolute;
+  width: 80%;
+  margin-right: 0px;
+  right: 0%;
+  // max-width: ;
+  min-width:1000px ;
 }
