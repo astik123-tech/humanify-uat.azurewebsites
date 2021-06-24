@@ -1,4 +1,5 @@
 
+
 *{
   margin: 0;
   padding: 0;
@@ -48,21 +49,7 @@ body{
   font-size: 20px;
   font-weight: 400;
 }
-.sidebar #btn{
-  position: absolute;
-  color: #343b4f;
-  top: 6px;
-  left: 50%;
-  font-size: 22px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  transform: translateX(-50%);
-}
-.sidebar.active #btn{
-  left: 90%;
-}
+
 .sidebar ul{
   margin-top: 20px;
 }
@@ -76,19 +63,7 @@ body{
   margin: 5px 0;
 }
 
-.sidebar ul li a{
-  color: #1d1b31;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  width: 100%;
-  white-space: nowrap;
-  transition: all 0.7s ease;
-}
-.sidebar ul li a:hover{
-  color: #CD3E0A;
-  background: #F8F8F8;
-}
+
 .sidebar ul li i{
   font-size: 18px;
   font-weight: 400;
