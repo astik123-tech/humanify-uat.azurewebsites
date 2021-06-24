@@ -35,6 +35,8 @@ export const Logo = styled.img`
   padding-left:${props =>(props.paddingLeft ? props.paddingLeft:"")};
   padding-right:${props =>(props.paddingRight ? props.paddingRight:"")};
   float:${props =>(props.float ? props.float:"")};
+  text-align:${props=>props.textAlign?props.textAlign:""};
+  box-shadow:${props=>props.boxShadow?props.boxShadow:""};
  `
 
 export const StyledNavLink = styled(NavLink)`
@@ -51,3 +53,7 @@ export const StyledNavLink = styled(NavLink)`
     background-color: rgba(orangered,.5);
   }`;
 
+export const List = styled.div`
+  width:100%;
+  height:71px;  
+`

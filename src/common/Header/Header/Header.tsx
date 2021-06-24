@@ -26,7 +26,7 @@ const Header = () => {
       <Toolbar>
         <Typography>
           <Link to="/">
-            <Logo src={ttechnlogo} alt="TTEC HN" className="logo" />
+            <Logo src={ttechnlogo} alt="TTEC HN"  />
           </Link>
         </Typography>
         <CustomDiv marginR="30px" fontSize="18px" fontWeight="400" flexGrow="1">

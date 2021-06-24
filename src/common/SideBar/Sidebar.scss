@@ -1,0 +1,120 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar{
+  position: fixed;
+  top: 64px;
+  left:0;
+  height: 100%;
+  width: 78px;
+  background: #FFFFFF;
+  padding: 6px 0px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.active{
+  width: 240px
+}
+.sidebar .logo_content .logo{
+  color: #3E3F42;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.sidebar.active .logo_content .logo{
+  opacity: 1;
+  pointer-events: none;
+}
+.logo_content .logo i{
+  font-size: 28px;
+  margin-right: 5px;
+}
+.logo_content .logo .logo_name{
+  font-size: 20px;
+  font-weight: 400;
+}
+.sidebar #btn{
+  position: absolute;
+  color: #343b4f;
+  top: 6px;
+  left: 50%;
+  font-size: 22px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+.sidebar.active #btn{
+  left: 90%;
+}
+.sidebar ul{
+  margin-top: 20px;
+}
+.sidebar ul li{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  margin: 5px 0;
+}
+
+.sidebar ul li a{
+  color: #1d1b31;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+  transition: all 0.7s ease;
+}
+.sidebar ul li a:hover{
+  color: #CD3E0A;
+  background: #F8F8F8;
+}
+.sidebar ul li i{
+  font-size: 18px;
+  font-weight: 400;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+.sidebar .links_name{
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.sidebar.active .links_name{
+  transition: 0s;
+  opacity: 1;
+  pointer-events: auto
+}
+.sidebar.active ~ .home_content{
+  z-index: 100;
+}
+.sidebar.active ~ .home_content{
+  width: calc(100% - 240px);
+  left: 240px;
+
+}
