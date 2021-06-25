@@ -10,14 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <AdminHeader/>
-      <main>
-         <div className="left__side">
-          <SideBar/>
-         </div>
-         <div className="right__side">
-            <Routes/>
-         </div>
-      </main>
+      <SideBar/>
     </BrowserRouter>
   );
 };

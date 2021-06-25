@@ -8,6 +8,7 @@ import { MdGroup } from 'react-icons/md'
 import { FaRegUser } from 'react-icons/fa'
 import { CgChevronDoubleRightO } from 'react-icons/cg'
 import { CgChevronDoubleLeftO } from 'react-icons/cg'
+import  Routes  from '../../Routes'
 const SideBar = () => {
   const [active, setActive] = useState<boolean>(false);
   const [activeClass, setActiveClass] = useState<string>("");
@@ -23,11 +24,12 @@ const SideBar = () => {
       <div className={`sidebar ${activeClass}`}>
         <div className="logo_content">
           <div className="logo">
-            <div className="logo_name">MAIN MENU  
-              <i className="icon_close" 
+            <div className="logo_name">
+              <span style={{float:"left"}}>MAIN MENU</span>   
+              <span style={{float:"right"}}> <i className="icon_close" 
                 onClick={() => setActive(!active)}>
                 <CgChevronDoubleLeftO size="25"/>
-              </i>
+              </i></span>
             </div>
           </div>
           <i className="icon_close" onClick={() => setActive(!active)}><CgChevronDoubleRightO size="20"/></i>    
@@ -72,6 +74,10 @@ const SideBar = () => {
             </SideBarLink>
           </li>
         </ul>
+      </div>
+      <div className="home_content">
+      <div className="nav">Home</div>
+        <Routes/>
       </div>
     </div>
   );

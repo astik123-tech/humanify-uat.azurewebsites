@@ -8,7 +8,7 @@ import ttechnlogo from "../../assets/images/ttec-hn-logo.svg";
 import { Logo, CustomDiv } from "../../styledComponents/Header";
 const AdminHeader = ()=>{
     return (
-        <AppBar position="static" style={{ backgroundColor: "#FFFFFF" }}>
+        <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF" }}>
             <Toolbar>
                 <Typography>
                     <Logo src={ttechnlogo} alt="TTEC HN"/>        

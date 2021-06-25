@@ -3,13 +3,15 @@ import React from 'react'
 
 export const List = styled.div`
  min-width:420px;
+ max-width:545px;
+ flex-grow: 1;
  height: 495px;
  background-color: #ffffff;
  box-shadow: 0px 1px 3px #0000000a;
  border: 1px solid #eaedf3;
  border-radius: 4px;
  opacity: 1;
- margin: 10px;
+ margin: 20px;
 `
 export const Item = styled.div`
       border-top: 1px solid #EAEDF3;
