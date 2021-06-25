@@ -22,32 +22,6 @@
 .sidebar.Active{
   width: 270px
 }
-.sidebar .logo_content .logo{
-  color: #3E3F42;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.5s ease;
-}
-.sidebar.Active .logo_content .logo{
-  opacity: 1;
-  pointer-events: none;
-}
-.logo_content .logo i{
-  font-size: 28px;
-  margin-right: 5px;
-}
-.logo_content .logo .logo_name{
-   color: #9EA0A5;
-   font-size: 15px;
-   font-weight: 400;
-   text-align: center;
-   pointer-events: none;
-   transition: all 0.3s ease;
-}
 .icon_close{
   color: #EAEDF3;
 }
@@ -109,9 +83,38 @@
 }
 
 .nav{
-  // background-color: blue;
   font-size: 20px;
   font-weight: 600;
   color:#3E3F42;
   padding: 20px 22px ;
 }
+
+.icon{
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  &:hover{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color:#CD3E0A;
+    background-color:#FFF1EC;
+  }
+}
+.Icon{
+  color:#9EA0A5;
+  margin-left:25px;
+  padding-top: 5px;
+  transition: all .5s ease  ;
+ 
+}
+.Icon >*{
+  &:hover{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color:#CD3E0A;
+    background-color:#FFF1EC;
+  }
+}
+// FFF1EC
