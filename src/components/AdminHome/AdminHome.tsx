@@ -11,7 +11,7 @@ const AdminHome = () => {
     <Container>
       <List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
-          <Content>Groups</Content>
+          <Content>Tenants</Content>
           <CustomDiv
               float="right"
               marginT= "15px"
@@ -110,7 +110,7 @@ const AdminHome = () => {
         </Item>
       </List><List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
-          <Content>Groups</Content>
+          <Content>Users</Content>
           <CustomDiv
               float="right"
               marginT= "15px"

@@ -23,8 +23,7 @@ export const SideBarLink = styled(NavLink)`
    text-decoration: none;
    transition: all 0.4s ease;
    &:hover{
-    color: #CD3E0A;
-    background: #F8F8F8;;
+    background: #FFF1EC;
   }
  
 `

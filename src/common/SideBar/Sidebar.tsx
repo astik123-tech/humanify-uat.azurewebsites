@@ -61,7 +61,7 @@ const SideBar = () => {
         <ul className="nav_list">
           <li>{sideButton}</li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/" exact>
               <i>
                 <VscHome size="20" />
               </i>
@@ -69,7 +69,7 @@ const SideBar = () => {
             </SideBarLink>
           </li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/configurations">
               <i>
                 <MdWidgets size="20" />
               </i>
@@ -77,7 +77,7 @@ const SideBar = () => {
             </SideBarLink>
           </li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/tenants">
               <i>
                 <MdBusiness size="20" />
               </i>
@@ -85,7 +85,7 @@ const SideBar = () => {
             </SideBarLink>
           </li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/zoom">
               <i>
                 <MdBusiness size="20" />
               </i>
@@ -93,7 +93,7 @@ const SideBar = () => {
             </SideBarLink>
           </li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/groups">
               <i>
                 <MdGroup size="20" />
               </i>
@@ -101,7 +101,7 @@ const SideBar = () => {
             </SideBarLink>
           </li>
           <li>
-            <SideBarLink to="">
+            <SideBarLink to="/users">
               <i>
                 <FaRegUser size="20" />
               </i>
