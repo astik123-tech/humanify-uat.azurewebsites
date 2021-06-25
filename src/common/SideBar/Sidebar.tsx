@@ -18,7 +18,7 @@ const SideBar = () => {
       <CgChevronDoubleRightO
         size="30"
         onClick={() => {
-          setActive(!active);
+          setActive(true);
         }}
       />
     </div>
@@ -28,16 +28,16 @@ const SideBar = () => {
     if (active) {
       setActiveClass("Active");
       setSideButton(
-        <CustomDiv color="#9EA0A5" marginL="28px">
-          <span>MAIN MENU</span>
-          <span className="icon">
+        <CustomDiv  display="flex" color="#9EA0A5" marginL="28px" transition="all 0.2s ease">
+           <span>MAIN MENU</span>
+           <span className="icon">
             <CgChevronDoubleLeftO
               size="30"
               onClick={() => {
-                setActive(!active);
+                setActive(false);
               }}
             />
-          </span>
+          </span> 
         </CustomDiv>
       );
     } else {
@@ -47,7 +47,7 @@ const SideBar = () => {
           <CgChevronDoubleRightO
             size="30"
             onClick={() => {
-              setActive(!active);
+              setActive(true);
             }}
           />
         </div>
@@ -60,7 +60,7 @@ const SideBar = () => {
       <div className={`sidebar ${activeClass}`}>
         <ul className="nav_list">
           <li>{sideButton}</li>
-          <li>
+           <li>
             <SideBarLink to="/" exact>
               <i>
                 <VscHome size="20" />
@@ -107,7 +107,7 @@ const SideBar = () => {
               </i>
               <span className="links_name">Users</span>
             </SideBarLink>
-          </li>
+          </li> 
         </ul>
       </div>
       <div className="home_content">

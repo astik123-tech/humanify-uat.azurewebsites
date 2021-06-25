@@ -63,6 +63,7 @@ float:${props =>(props.float ? props.float:"")};
 text-align:${props=>props.textAlign?props.textAlign:""};
 box-shadow:${props=>props.boxShadow?props.boxShadow:""};
 font-weight:${props=>props.fontWeight?props.fontWeight:""};
+transition:${props=>props.transition?props.transition:""};
 `
 
 export const Logo = styled.img`
