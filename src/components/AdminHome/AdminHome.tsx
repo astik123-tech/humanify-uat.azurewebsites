@@ -1,10 +1,10 @@
 import React from "react";
-import { CustomDiv } from "../../styledComponents/Header";
+
 import {
   Container,
   List,
   Item,
-  Content,
+  Content,CustomDiv
 } from "../../styledComponents/AdmineHome";
 const AdminHome = () => {
   return (

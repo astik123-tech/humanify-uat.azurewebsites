@@ -9,7 +9,7 @@ import { FaRegUser } from "react-icons/fa";
 import { CgChevronDoubleRightO } from "react-icons/cg";
 import { CgChevronDoubleLeftO } from "react-icons/cg";
 import Routes from "../../Routes";
-import { CustomDiv } from "../../styledComponents/Header";
+import { CustomDiv } from "../../styledComponents/AdmineHome";
 const SideBar = () => {
   const [active, setActive] = useState<boolean>(false);
   const [activeClass, setActiveClass] = useState<string>("");

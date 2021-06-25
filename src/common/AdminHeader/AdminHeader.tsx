@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import {BsBoxArrowRight} from 'react-icons/bs'
 //logo
 import ttechnlogo from "../../assets/images/ttec-hn-logo.svg";
-import { Logo, CustomDiv } from "../../styledComponents/Header";
+import { Logo, CustomDiv } from "../../styledComponents/AdmineHome";
 const AdminHeader = ()=>{
     return (
         <AppBar position="fixed" style={{ backgroundColor: "#FFFFFF" }}>
