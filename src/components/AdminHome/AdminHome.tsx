@@ -108,7 +108,8 @@ const AdminHome = () => {
             <CustomDiv fontSize="14px" color="#9EA0A5">This is the descriptions over here</CustomDiv>
           </Content>
         </Item>
-      </List><List>
+      </List>
+      <List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
           <Content>Users</Content>
           <CustomDiv

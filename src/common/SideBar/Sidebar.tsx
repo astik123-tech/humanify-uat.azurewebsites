@@ -16,6 +16,7 @@ const SideBar = () => {
   const [sideButton, setSideButton] = useState(
     <div className="Icon">
       <CgChevronDoubleRightO
+        id="clickIconRight"
         size="30"
         onClick={() => {
           setActive(true);
@@ -32,6 +33,7 @@ const SideBar = () => {
            <span>MAIN MENU</span>
            <span className="icon">
             <CgChevronDoubleLeftO
+              id="clickIconLeft"
               size="30"
               onClick={() => {
                 setActive(false);
@@ -45,6 +47,7 @@ const SideBar = () => {
       setSideButton(
         <div className="Icon">
           <CgChevronDoubleRightO
+            id="clickIconRight"
             size="30"
             onClick={() => {
               setActive(true);

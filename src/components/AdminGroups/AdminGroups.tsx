@@ -1,7 +1,3 @@
 export const AdminGroups =()=>{
-    return (
-        <div>
-            Groups
-        </div>
-    )
+    return ( <div>Groups</div>)
 }

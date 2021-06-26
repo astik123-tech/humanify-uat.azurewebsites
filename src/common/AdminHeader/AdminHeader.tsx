@@ -20,7 +20,7 @@ const AdminHeader = ()=>{
                     fontWeight="400" 
                     color="black"
                 >
-                    Frederick <span style={{color: "#9EA0A5", marginLeft:"10px"}}> <BsBoxArrowRight size="20"/> </span>
+                   <span> Frederick</span> <span style={{color: "#9EA0A5", marginLeft:"10px"}}> <BsBoxArrowRight size="20"/> </span>
                 </CustomDiv>
             </Toolbar>
         </AppBar>
