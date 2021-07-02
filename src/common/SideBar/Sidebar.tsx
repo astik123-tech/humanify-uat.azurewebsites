@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory,useLocation } from 'react-router-dom'
 import "./Sidebar.scss";
 import { SideBarLink } from "../../styledComponents/SideBar";
 import { VscHome } from "react-icons/vsc";
@@ -10,6 +11,7 @@ import { CgChevronDoubleRightO } from "react-icons/cg";
 import { CgChevronDoubleLeftO } from "react-icons/cg";
 import Routes from "../../Routes";
 import { CustomDiv } from "../../styledComponents/AdmineHome";
+import Nav from '../Nav/Nav'
 const SideBar = () => {
   const [active, setActive] = useState<boolean>(false);
   const [activeClass, setActiveClass] = useState<string>("");
@@ -24,7 +26,9 @@ const SideBar = () => {
       />
     </div>
   );
-
+  const [component, setComponent] = useState("Home")
+  const history =   useHistory()
+  
   useEffect(() => {
     if (active) {
       setActiveClass("Active");
@@ -56,8 +60,9 @@ const SideBar = () => {
         </div>
       );
     }
-  }, [active]);
 
+  }, [active]);
+  
   return (
     <div>
       <div className={`sidebar ${activeClass}`}>
@@ -114,7 +119,6 @@ const SideBar = () => {
         </ul>
       </div>
       <div className="home_content">
-        <div className="nav">Home</div>
         <Routes />
       </div>
     </div>

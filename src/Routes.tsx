@@ -7,15 +7,35 @@ import AdminHome from './components/AdminHome/AdminHome'
 import { AdminTenants } from "./components/AdminTenants/AdminTenants";
 import { AdminUsers } from "./components/AdminUsers/AdminUsers";
 import { AdminZoom } from "./components/AdminZoom/AdminZoom";
+import  Nav  from './common/Nav/Nav'
 const Routes = ()=>{
    return (
     <Switch>   
-        <Route path="/configurations"  component={AdminConfigurations}/>
-        <Route path="/groups"  component={AdminGroups}/>
-        <Route path="/tenants"  component={AdminTenants}/>
-        <Route path="/users"  component={AdminUsers}/>
-        <Route path="/zoom"  component={AdminZoom}/>
-        <Route path="/" exact={true} component={AdminHome}/>
+        <Route path="/configurations">
+            <Nav name="configurations"/>
+            <AdminConfigurations/>
+        </Route>
+        
+        <Route path="/groups">
+            <Nav name="Groups"/>
+            <AdminGroups/>
+        </Route>
+        <Route path="/tenants">
+            <Nav name="Tenants "/>
+            <AdminTenants />
+        </Route>
+        <Route path="/users">
+            <Nav name="Users"/>
+            <AdminUsers/>
+        </Route>
+        <Route path="/zoom">
+            <Nav name="Zoom"/>
+            <AdminZoom />
+        </Route>
+        <Route path="/" exact={true}> 
+            <Nav name="Home"/>
+            <AdminHome/>
+        </Route>
     </Switch>
    )
 }

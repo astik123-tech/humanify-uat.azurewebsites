@@ -4,7 +4,7 @@ import {
   Container,
   List,
   Item,
-  Content,CustomDiv
+  Content,CustomDiv,CustomLink
 } from "../../styledComponents/AdmineHome";
 const AdminHome = () => {
   return (
@@ -12,15 +12,11 @@ const AdminHome = () => {
       <List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
           <Content>Tenants</Content>
-          <CustomDiv
-              float="right"
-              marginT= "15px"
-              color= "#9EA0A5"
-              fontSize= "14px"
-              marginR="30px"
+          <CustomLink
+              to="/tenants"
           >
             View All
-          </CustomDiv>
+          </CustomLink>
         </CustomDiv>
         <Item>
           <Content>
@@ -62,15 +58,11 @@ const AdminHome = () => {
       <List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
           <Content>Groups</Content>
-          <CustomDiv
-              float="right"
-              marginT= "15px"
-              color= "#9EA0A5"
-              fontSize= "14px"
-              marginR="30px"
+          <CustomLink
+              to="/groups"
           >
             View All
-          </CustomDiv>
+          </CustomLink>
         </CustomDiv>
         <Item>
           <Content>
@@ -112,15 +104,11 @@ const AdminHome = () => {
       <List>
         <CustomDiv fontSize="18px" fontWeight="600" height="50px" marginT="10px">
           <Content>Users</Content>
-          <CustomDiv
-              float="right"
-              marginT= "15px"
-              color= "#9EA0A5"
-              fontSize= "14px"
-              marginR="30px"
+          <CustomLink
+              to="/users"
           >
             View All
-          </CustomDiv>
+          </CustomLink>
         </CustomDiv>
         <Item>
           <Content>

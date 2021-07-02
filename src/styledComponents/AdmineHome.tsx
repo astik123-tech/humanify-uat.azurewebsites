@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from 'react'
-
+import { Link } from "react-router-dom";
 export const List = styled.div`
  min-width:420px;
  max-width:545px;
@@ -31,6 +31,14 @@ export const Container = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
 `
+export const CustomLink = styled(Link)`
+  float:right;
+  margin-top:15px;
+  color:#9EA0A5;
+  font-size:14px;
+  margin-right:30px;
+  text-decoration:none;
+`;
 
 export const CustomDiv = styled.div<any>`
 color: ${props =>(props.color ? props.color:"")};
